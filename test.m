@@ -1,4 +1,7 @@
+    pkg load symbolic
+
 run("lib/stew_inverse.m")
+run("lib/stew_forward.m")
 
 size=100;
 
@@ -35,4 +38,14 @@ px=0;
 py=0;
 pz=200;
 
-stew_inverse(xsi,ysi,xmi,ymi,roll,pitch,yaw,px,py,pz)
+inverse = stew_inverse(xsi,ysi,xmi,ymi,roll,pitch,yaw,px,py,pz)
+
+
+L1 = 133.6634
+L2 = 133.6634
+L3 = 133.6634
+L4 = 133.6634
+L5 = 133.6634
+L6 = 133.6634
+
+stew_forward(L1,L2,L3,L4,L5,L6,xsi,ysi,xmi,ymi,-30,30,-30,30,-30,30,-100,100,-100,100,-100,100,50,200)

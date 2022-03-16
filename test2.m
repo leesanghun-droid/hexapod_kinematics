@@ -1,7 +1,13 @@
-run("lib/fun.m")
-
-
-te(1)=4
-te(2)=5
-
-#test(te)
+    pkg load symbolic
+    
+    x =1
+    
+    x
+    
+    y=2
+    
+    y
+    
+    z=3
+    
+    z

@@ -25,6 +25,8 @@ printf("load_stew_inverse\r\n")
 
 function inv_return=stew_inverse(xsi,ysi,xmi,ymi,roll,pitch,yaw,px,py,pz)
 #    digits(15)                           %digit accuracy specification
+    xsi
+    
     a1=[xsi(1);ysi(1);0;1];              
     a2=[xsi(2);ysi(2);0;1];              
     a3=[xsi(3);ysi(3);0;1];              
